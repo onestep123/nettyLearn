@@ -1,0 +1,44 @@
+plugins {
+    id 'java'
+}
+
+group 'com.forerun'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+
+}
+
+dependencies {
+
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    // https://mvnrepository.com/artifact/io.netty/netty-all
+    compile group: 'io.netty', name: 'netty-all', version: '4.1.41.Final'
+    //protobuf
+    compile group: 'com.google.protobuf', name: 'protobuf-java', version: '3.3.1'
+    // https://mvnrepository.com/artifact/com.google.protobuf/protobuf-java-util
+    compile group: 'com.google.protobuf', name: 'protobuf-java-util', version: '3.3.1'
+    // https://mvnrepository.com/artifact/commons-net/commons-net
+    compile group: 'commons-net', name: 'commons-net', version: '3.5'
+    // https://mvnrepository.com/artifact/org.projectlombok/lombok
+    compile group: 'org.projectlombok', name: 'lombok', version: '1.18.10'
+    // https://mvnrepository.com/artifact/org.json/json
+    compile group: 'org.json', name: 'json', version: '20180130'
+    // https://mvnrepository.com/artifact/com.alibaba/fastjson
+    compile group: 'com.alibaba', name: 'fastjson', version: '1.2.70'
+
+    // https://mvnrepository.com/artifact/com.sun.jna/jna
+    compile group: 'com.sun.jna', name: 'jna', version: '3.0.9'
+
+    // 本地jar包
+    compile fileTree(dir:'libs',includes:['*jar'])
+
+
+
+
+
+
+}
